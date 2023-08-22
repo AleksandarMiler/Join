@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <link rel="stylesheet" href="./Style/fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header id="headline">
+        <img  class="logo-mobile" src="./Img/logo.svg">
+        <p class="kanban-text">Kanban Project Management Tool</p>
+        <div class="image-box">
+            <a href="./help.html"><img class="question-mark" src="./Img/icon_question.svg"></a>
+            <img class="avatar-header" id="avatarHeaderImage" src="./Img/avatar_user_header.svg" onclick="showPopOut()">
+        </div>
+
+    </header>
+
+    <div class="container-left">
+        <div class="upper-cont">
+        <div class="logo-cont"><img src="./Img/logo-header.svg"></div>
+        <div class="links-cont">
+            <a href="./summary.html"> <div  class="links-cont-elements"><img src="./Img/icon_summary.svg"><span class="m-left">Summary</span></div></a>
+            <a href="./board.html"><div  class="links-cont-elements"><img src="./Img/icon_board.svg"><span class="m-left">Board</span></div></a>
+            <a href="./add_task.html"><div  class="links-cont-elements"><img src="./Img/icon_task.svg"><span class="m-left">Add Task</span></div></a>
+            <a href="./contacts.html"><div  class="links-cont-elements"><img src="./Img/icon_contacts.svg"><span class="m-left">Contacts</span></div></a>
+        </div>
+    </div>
+
+        <div class="immpresum-cont">
+            <div class="mb-30">
+                <a href="./legalNotice.html"><div class="links-cont-elements"><img src="./Img/Frame 4.svg"><span class="m-left">Legal Notice</span></div></a>
+                <a href="./datenSchutz.html"><div class="links-cont-elements"><img class ="data-security-icon" src="./Img/file-security.svg"><span class="m-left">Daten Schutz</span></div></a>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="log-out-pop-out-web" id="popOut">
+        <a href="./help.html"><div id="helpBtn" class="d-none">Help</div></a>
+        <a href="./legalNotice.html"><div id="legalNoticeBtn" class="d-none">Legal notice</div></a>
+        <div onclick="logOut()">Log out</div>
+            </div>
+
+
+</body>
+
+</html>

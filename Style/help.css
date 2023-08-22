@@ -1,0 +1,82 @@
+.help-cont {
+    margin-left: 46px;
+    margin-top: 36px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.number {
+    margin-right: 50px;
+}
+
+.steps-cont {
+    display: flex;
+}
+
+.explanation {
+    display: flex;
+    flex-direction: column;
+}
+
+.join {
+    color: var(--bs-cyan);
+    font-weight: 200;
+}
+
+.pdg-btm {
+    padding-bottom: 24px;
+}
+
+.blue-arrow {
+    position: fixed;
+    top: 125px;
+    right: 46px;
+    cursor: pointer;
+}
+
+.dev-akademie {
+    color: red;
+}
+
+/******* Daten Schutz *******/
+
+.daten-schutz-p {
+    font-size: 16px;
+    margin-left: 0 !important;
+}
+
+.daten-schutz-h1 {
+    padding-bottom: 32px;
+}
+
+.daten-schutz-h2 {
+    padding-bottom: 28px;
+}
+
+daten-schutz-h3 {
+    padding-bottom: 24px;
+}
+
+/*********** Responsive Version only **********/
+
+
+@media(max-width: 1200px) {
+    .help-cont {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+@media(max-width: 900px) {
+    .help-cont {
+        margin-bottom: 100px;
+    }
+}
+
+@media(max-width: 500px) {
+    .help-cont {
+        width: unset;
+        margin-right: 0;
+    }
+}

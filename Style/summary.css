@@ -1,0 +1,641 @@
+.d-none {
+    display: none !important;
+}
+
+.summary-cont {
+    position: absolute;
+    left: 232px;
+    top: 94px;
+    width: calc(100% - 232px);
+    height: calc(100% - 95px);
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.header-cont {
+    display: flex;
+    padding: 60px;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.kanban-contacts {
+    padding-left: 44px;
+    margin-top: 12px;
+    margin-left: 0 !important;
+    display: none;
+}
+
+.underline-contact {
+    border-bottom: 3px solid #29ABE2;
+    width: 105px;
+    margin-top: 30px;
+    display: none;
+}
+
+.header-cont-elem-right {
+    font-size: 26px;
+    border-left: 3px solid #29ABE2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    height: 60px;
+}
+
+.summary-task-cont {
+    min-width: 500px;
+    display: flex;
+    margin-left: 62px;
+}
+
+.summary-task-cont-left {
+    width: 560px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tasks-first-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-task-box {
+    width: calc(28%);
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    transition: all 225ms ease-in-out;
+}
+
+
+.summary-task-box:hover {
+    background-color: #2A3647;
+    color: #FFFFFF;
+    transform: scale(1.1);
+    transform-origin: center;
+
+    transition: all 225ms ease-in-out;
+}
+
+.summary-task-box-numm {
+    font-size: 42px;
+}
+
+.summary-task-box-text-top {
+    font-size: 19px;
+    text-align: center;
+    width: 65%;
+}
+
+.task-middle-line {
+    background-color: white;
+    height: 150px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+}
+
+.task-middle-line:hover {
+    background-color: #2A3647;
+    color: #FFFFFF;
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+.section-urgent {
+    display: flex;
+    min-width: 222px;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #D1D1D1;
+    height: 120px;
+}
+
+.section-urgent img {
+    width: 60px;
+    height: 60px;
+}
+
+.section-urgent-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.section-urgent-text-elem {
+    font-size: 47px;
+}
+
+.section-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: unset;
+}
+
+.date-text {
+    font-size: 21px;
+}
+
+
+.tasks-bottom-line {
+    height: 150px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-task-box-big {
+    height: 150px;
+    width: calc(42%);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    transition: all 225ms ease-in-out;
+}
+
+.summary-task-box-big:hover {
+    background-color: #2A3647;
+    color: #FFFFFF;
+    transform: scale(1.1);
+    transform-origin: center;
+    transition: all 225ms ease-in-out;
+
+}
+
+.summary-task-box-big-elem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+}
+
+
+.summary-task-box-big img {
+    width: 69px;
+    height: 69px;
+}
+
+.summary-task-box-big image:hover {
+    fill: #FFFFFF;
+}
+
+.summary-task-cont-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-task-cont-right-elem {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-of-day {
+    font-size: 47px;
+}
+
+.visitor {
+    font-size: 64px;
+    color: #29ABE2;
+}
+
+
+/**
+ * ----------------------------------------
+ * animation fade-out
+ * ----------------------------------------
+ */
+
+.overlay-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+    bottom: 100px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fade-out {
+    -webkit-animation: fade-out 1.5s ease-out 1s both;
+    animation: fade-out 1.5s ease-out 1s both;
+}
+
+
+@-webkit-keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* Responsive Version  */
+
+@media(max-width: 1200px) {
+    .summary-task-cont-right {
+        display: none;
+    }
+
+    .summary-cont {
+        left: 128px;
+        width: calc(100% - 128px);
+    }
+
+    .summary-task-cont-left {
+        width: 560px;
+    }
+}
+
+@media(max-width: 900px) {
+    .summary-cont {
+        left: 0;
+        width: 100%;
+    }
+
+    .header-cont {
+
+        justify-content: unset;
+        align-items: unset;
+        flex-direction: column;
+        padding-top: 0;
+        padding-left: 44px;
+    }
+
+    .kanban-contacts {
+        display: none !important;
+    }
+
+    .underline-contact {
+        display: block;
+    }
+
+    .header-cont-elem-right {
+        font-size: 26px;
+        border-left: none;
+        display: flex;
+        justify-content: unset;
+        align-items: unset;
+        margin-left: 0;
+        height: 60px;
+    }
+
+    .summary-task-cont {
+
+        min-height: 0;
+        min-width: 0;
+        margin-left: 0;
+    }
+
+    .summary-task-cont-left {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .summary-task-box {
+        height: 130px;
+
+    }
+
+    .summary-task-box-numm {
+        font-size: 42px;
+    }
+
+    .summary-task-box-text-top {
+        font-size: 16px;
+        width: 48%;
+
+    }
+
+    .summary-task-box-text {
+        font-size: 16px;
+
+    }
+
+    .task-middle-line {
+        height: 130px;
+
+    }
+
+    .section-urgent {
+        height: 100px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .tasks-bottom-line {
+        height: 130px;
+    }
+
+    .summary-task-box-big {
+        height: 130px;
+    }
+
+    .section-urgent img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .summary-task-box-big img {
+        width: 55px;
+        height: 55px;
+    }
+
+}
+
+@media(max-width: 550px) {
+    body {
+        /* overflow-x: hidden; */
+    }
+
+    .log-out-pop-out-web {
+        position: fixed;
+        top: 100px;
+    }
+
+    .summary-task-box-big img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .section-urgent img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tasks-bottom-line {
+        height: 110px;
+    }
+
+    .summary-task-box-big {
+        height: 110px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .summary-task-box-text {
+        font-size: 14px;
+        width: unset;
+        margin-top: -12px;
+
+    }
+
+
+    .summary-task-box-text-top {
+        font-size: 14px;
+        margin-top: -12px;
+        width: 65%;
+
+    }
+
+    .summary-task-box {
+        height: 110px;
+
+    }
+
+    .task-middle-line {
+        height: 110px;
+
+    }
+
+    .section-urgent {
+        height: 70px;
+        min-width: 120px;
+    }
+
+    .section-urgent-text-elem {
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 400px) {
+    .kanban-contacts {
+        display: none !important;
+    }
+
+    .contact-section-header {
+        font-size: 36px !important;
+    }
+
+    .header-cont-elem-right {
+        height: unset;
+        font-size: 18px;
+    }
+
+    .urgent-text {
+        font-size: 14px;
+    }
+
+    .upcomming-deadline-text {
+        font-size: 14px;
+    }
+
+    .header-cont {
+        padding-bottom: 16px;
+        height: unset;
+    }
+
+    .summary-task-box {
+        height: 100px;
+        justify-content: space-evenly;
+    }
+
+    .summary-task-box-numm {
+        font-size: 28px;
+    }
+
+    .summary-task-box-text-top {
+        font-size: 12px;
+    }
+
+    .task-middle-line {
+        height: 100px;
+    }
+
+    .section-urgent-text-elem {
+        font-size: 28px;
+    }
+
+    .section-urgent-text-elem span {
+        font-size: 14px;
+    }
+
+    .date-text {
+        font-size: 15px;
+    }
+
+    .summary-task-box-big {
+        height: 100px;
+    }
+
+    .summary-task-box-text {
+        font-size: 14px;
+    }
+
+    .task-middle-line {
+        margin-top: 16px;
+    }
+
+    .tasks-bottom-line {
+        margin-top: 14px;
+        margin-bottom: 16px;
+    }
+
+    .summary-task-box-big-elem {
+        height: 60%;
+        justify-content: space-around;
+    }
+
+}
+
+
+/*****responsive Height ***********/
+
+@media(max-height: 650px) {
+    .logo-cont img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .links-cont-elements {
+        font-size: 14px;
+    }
+
+    .summary-task-box {
+        height: 100px;
+
+    }
+
+    .summary-task-box-numm {
+        font-size: 36px;
+    }
+
+    .summary-task-box-text-top {
+        font-size: 17px;
+    }
+
+    .task-middle-line {
+
+        height: 100px;
+    }
+
+    .section-urgent {
+        height: 75px;
+    }
+
+    .section-urgent-text-elem {
+        font-size: 21px;
+    }
+
+    .tasks-bottom-line {
+        height: 100px;
+    }
+
+    .summary-task-box-big {
+        height: 100px;
+    }
+
+    .time-of-day {
+        font-size: 41px;
+    }
+}
+
+
+@media(max-height: 650px) and (max-width: 900px) {
+    .underline-contact {
+        margin-top: -5px !important;
+    }
+
+    .summary-task-box {
+        height: 90px;
+    }
+
+    .summary-task-box-numm {
+        font-size: 34px;
+    }
+
+    .summary-task-box-text-top {
+        font-size: 15px;
+
+    }
+
+    .task-middle-line {
+        height: 91px;
+
+    }
+
+    .section-urgent {
+        height: 75px;
+    }
+
+    .tasks-bottom-line {
+        height: 90px;
+    }
+
+    .summary-task-box-big {
+        height: 90px;
+    }
+
+    .tasks-bottom-line {
+        margin-top: 14px;
+    }
+
+    .task-middle-line {
+
+        margin-top: 14px;
+    }
+}
+
+@media(max-height: 650px) and (max-width: 550px) {
+
+
+}
